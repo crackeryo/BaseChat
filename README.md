@@ -51,3 +51,7 @@ paid plan or switch to  a new account.
 If you find this repository helpful in getting started in ERC4337.
 
 Please vote for BaseChat in https://prop.house/base/based-accounts
+
+## Chat Screenshot
+
+![ScreenShot](screenshot1.png)
