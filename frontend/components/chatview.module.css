@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+
+.chat_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between messages */
+    padding: 20px;
+    background-color: #f0f0f04b; /* Chat container background color */
+    border: 3px solid black;
+    border-radius: 10px; /* Rounded corners */
+    height: 70vh;
+    overflow: scroll;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 10px 14px 18px rgba(255, 255, 255, 0.2);
+
+
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start; /* Align messages to the left by default */
+    
+  }
+  
+  .profile {
+    margin-right: 10px; /* Spacing between profile and message content */
+  }
+  
+  .profileCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff; /* Profile circle background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profileCircle:hover {
+    background-color: #0056b3; /* Change color on hover */
+  }
+  
+  .messageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 10px;
+
+  }
+  
+  .sender {
+    font-weight: bold;
+    margin-bottom: 4px; /* Spacing between sender and content */
+  }
+  
+  .content {
+    background-color: #007bff; /* Chat bubble background color */
+ 
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    word-break: break-all;
+    font-size: 16px;
+    border:3px solid rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Comic Neue';
+
+  }
+
+  .sent .messageContent {
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: row-reverse; 
+  }
+  .sent {
+    display: flex; /* Ensure .sent messages are displayed as flex containers */
+    align-items: flex-start; /* Align .sent messages to the right */
+    flex-direction: row-reverse; /* Reverse the order to align .sent messages to the right */
+    
+  }
+
+  .received .messageContent .content {
+    background-color: #bcd4ec; /* Grey background color for sent messages */
+
+  }
+  .sent .messageContent .content {
+    background-color: #8ee3b0; /* Grey background color for sent messages */
+
+  }
+.jump_button{
+  width: 100%;
+  color:black;
+  font-weight: bold;
+  border-top: 1px solid white;
+  padding: 5px;
+  transform: translateY(-100%);
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 3px solid black;
+
+}
+
+.jump_buttom_disabled{
+  color: rgba(255, 255, 255, 0);
+  border: none;
+  background-color: #ffffff00;
+}
+
+.type0{
+  color: black;
+  /* color:white;
+  border: 1px solid black; */
+}
+.type1{
+ font-weight: bold;
+}
+.type2 .messageContent .content{
+color: rgb(255, 89, 0);
+  background-color: white;
+}
+.type3 .messageContent .content{
+font-size: 24px;
+}

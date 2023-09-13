@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,700,800,1000');
+@import url('https://fonts.googleapis.com/css?family=Abel:300,400,500,700,800,1000');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,700,800,1000');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,1000');
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 120, 150, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
