@@ -55,3 +55,5 @@ Please vote for BaseChat in https://prop.house/base/based-accounts
 ## Demo Link
 
 https://chat-4337.vercel.app 
+
+Deployed On Base Georli: 
